@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTAVRPFBrowser", "GTAVRPFBrowser.csproj", "{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lzx", "..\lzx\lzx.vcxproj", "{B97A470C-E6E6-4D61-AA00-60643A70E8CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Debug|Win32.ActiveCfg = Debug|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Debug|x86.ActiveCfg = Debug|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Debug|x86.Build.0 = Debug|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Release|Win32.ActiveCfg = Release|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Release|x86.ActiveCfg = Release|x86
+		{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}.Release|x86.Build.0 = Release|x86
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Debug|Win32.Build.0 = Debug|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Debug|x86.ActiveCfg = Debug|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Release|Win32.ActiveCfg = Release|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Release|Win32.Build.0 = Release|Win32
+		{B97A470C-E6E6-4D61-AA00-60643A70E8CF}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

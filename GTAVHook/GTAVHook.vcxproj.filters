@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="V">
+      <UniqueIdentifier>{328f7eaa-3b2d-48ec-828f-20a182008269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="V\VEngine">
+      <UniqueIdentifier>{5aa87f76-4713-4251-9b1a-fad172775ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="V\VEntity">
+      <UniqueIdentifier>{aa0007ad-2d7e-4855-8a31-cb5301d1e5c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Development">
+      <UniqueIdentifier>{17e3a056-fa91-4c92-9e9b-fefe12df256f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="V\GTAONLINE">
+      <UniqueIdentifier>{ce0cccba-b16b-4798-baf4-82344c3d7eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="V\VEngine\classes">
+      <UniqueIdentifier>{7128451d-2ff0-43ab-8dc6-d5eecbbcb69a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CGTAHook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CGTAHook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VVehicle.h">
+      <Filter>V\VEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="VPed.h">
+      <Filter>V\VEntity</Filter>
+    </ClInclude>
+    <ClInclude Include="VCore.h">
+      <Filter>V</Filter>
+    </ClInclude>
+    <ClInclude Include="VTasks.h">
+      <Filter>V\VEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="VHashes.h">
+      <Filter>V\VEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="VStructure.h">
+      <Filter>V\VEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="CVTaskManager.h">
+      <Filter>V\VEngine\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="VInput.h">
+      <Filter>V\VEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="VNetwork.h">
+      <Filter>V\GTAONLINE</Filter>
+    </ClInclude>
+    <ClInclude Include="VAchievments-ONLINE.h">
+      <Filter>V\GTAONLINE</Filter>
+    </ClInclude>
+    <ClInclude Include="CRXSC.h">
+      <Filter>V\VEngine\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="VShared.h">
+      <Filter>V</Filter>
+    </ClInclude>
+    <ClInclude Include="VItem.h">
+      <Filter>V\VEntity</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Temp.txt">
+      <Filter>Development</Filter>
+    </Text>
+    <Text Include="RAGE_V_Animlist.txt">
+      <Filter>Development</Filter>
+    </Text>
+    <Text Include="RAGE_V_CTasks.txt">
+      <Filter>Development</Filter>
+    </Text>
+    <Text Include="Classes.txt">
+      <Filter>Development</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

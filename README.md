@@ -1,4 +1,3 @@
-Grand Theft Auto 5 &amp; RAGE ENGINE Research and Reverse Engineering
-============
+Open source modification & SDK for GTA 5/V
 
-
+Hash Codes, Structures and other parts of the Grand Theft Auto 5 games

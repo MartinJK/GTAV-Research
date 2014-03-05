@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC36C6B4-C7DD-44E2-949E-2EE21EA2F750}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTANETWORKV</RootNamespace>
+    <AssemblyName>GTANETWORKV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GTA5.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalOptions.cs" />
+    <Compile Include="GTA5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GTA5.Designer.cs">
+      <DependentUpon>GTA5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\Helper.cs" />
+    <Compile Include="Operations\New.cs" />
+    <Compile Include="Operations\ResourceProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operations\ResourceProperties.Designer.cs">
+      <DependentUpon>ResourceProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\Import.cs" />
+    <Compile Include="Operations\OperationsList.cs" />
+    <Compile Include="Operations\Delete.cs" />
+    <Compile Include="Operations\FileProporties.cs" />
+    <Compile Include="Operations\RegularFileProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operations\RegularFileProperties.Designer.cs">
+      <DependentUpon>RegularFileProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operations\Rename.cs" />
+    <Compile Include="Platform.cs" />
+    <Compile Include="PlatformSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlatformSelection.Designer.cs">
+      <DependentUpon>PlatformSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Operations\Export.cs" />
+    <Compile Include="Operations\RPFOperations.cs" />
+    <Compile Include="Operations\Operations.cs" />
+    <Compile Include="RPF7\ExternalFileStreamCreator.cs" />
+    <Compile Include="RPF7\ResourceStreamCreator.cs" />
+    <Compile Include="EntryListViewItem.cs" />
+    <Compile Include="RPF7\Entries\RegularFileEntry.cs" />
+    <Compile Include="RPF7\Entries\DirectoryEntry.cs" />
+    <Compile Include="RPF7\Entries\FileEntry.cs" />
+    <Compile Include="RPF7\Entries\ResourceEntry.cs" />
+    <Compile Include="RPF7\CompressedFileStreamCreator.cs" />
+    <Compile Include="RPF7\FileStreamCreator.cs" />
+    <Compile Include="RPF7\IStreamCreator.cs" />
+    <Compile Include="EntryTreeNode.cs" />
+    <Compile Include="RPF7\Structs.cs" />
+    <Compile Include="Utils\StreamExtension.cs" />
+    <Compile Include="Utils\AES.cs" />
+    <Compile Include="RPF7\Entries\Entry.cs" />
+    <Compile Include="RPF7\RPF7File.cs" />
+    <Compile Include="Utils\PartialStream.cs" />
+    <Compile Include="Utils\StreamKeeper.cs" />
+    <Compile Include="Utils\XMemCompressStream.cs" />
+    <Compile Include="Utils\FolderSelectDialog.cs" />
+    <Compile Include="Utils\GUI.cs" />
+    <Compile Include="Utils\Reflector.cs" />
+    <Compile Include="Utils\XMemDecompressStream.cs" />
+    <EmbeddedResource Include="Operations\ResourceProperties.resx">
+      <DependentUpon>ResourceProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operations\RegularFileProperties.resx">
+      <DependentUpon>RegularFileProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlatformSelection.resx">
+      <DependentUpon>PlatformSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.bmp" />
+    <Content Include="GTA5.ico" />
+    <None Include="Resources\save.bmp" />
+    <None Include="Resources\saveas.bmp" />
+    <Content Include="xcompress.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
